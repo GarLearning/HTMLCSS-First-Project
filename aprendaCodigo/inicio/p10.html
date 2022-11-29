@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topo{
+            text-align: center;
+        }
+
+        h1, h3{
+            color:darkblue;
+        }
+
+        .caixa{
+            width: 300px;/*largura da caixa*/
+            background-color:bisque; 
+            margin: 10px 20px 30px 40px;/*colocando so uma medida: diz respeito a todas as margens.
+            2 medidas: superior e depois a inferior. 
+            4 medidas: superior, direita, inferior, esquerda.
+            ou ao invez de margin, colocar margin-direção(right, left...).
+            margin é a relação levando em conta os objetos q estão fora, fazem divisa com ele*/
+            
+            padding: 10px 20px;/*relação com os objetos de dentro(texto)*, dando para escrever nos 
+            mesmos formatos da margin.
+            podendo acumular margens, no caso do elemento h3*/
+        }
+
+        li{
+            margin-bottom: 10px ;
+            line-height: 1.1;/*quebra de linha | numero relativo ao elemento(fonte)*/
+        }
+
+    </style>
+
+    <body>
+        <h1 class = "topo">Olá Mundo!</h1>
+        <p class = "topo">Este é o resumo das quatro primeiras aulas:</p>
+        
+        <div class="caixa">
+            <h3>HTML e CSS são linguagens de conteúdo</h3> 
+            <ul>
+                <li>HTML define os elementos e o conteúdo da página</li>
+                <li>CSS define a formatação desses elementos</li>
+                <li>A linguagem de programação do navegador é o <b>Javascript</b></li>
+            </ul>
+        </div>
+
+        <div class="caixa">
+            <h3>O HTML trabalha com elementos</h3>
+            <ul>
+                <li>Cada elemento possui tags</li>
+                <li>Entre as tags nós colocamos o conteúdo</li>
+                <li>Para alterar o elemento nós usamos atributos</li>
+            </ul>
+        </div>
+
+        <div class="caixa">
+            <h3>O CSS formata os elementos</h3>
+            <ul>
+                <li>O CSS tem seus próprios atributos</li>
+                <li>Vários atributos podem ser agrupados para cada classe ou elemento HTML</li>
+                <li>Um elemento pode ter uma ou mais classes CSS</li>
+            </ul>
+        </div>  
+
+    </body>
+</html>

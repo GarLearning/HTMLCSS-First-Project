@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topo{
+            text-align: center;
+        }
+
+        h1, h3{
+            color:darkblue;
+        }
+
+        .caixa{
+            width: 300px;
+            height: 265;/*caixa do tamanho do maior item*/
+            background-color:rgb(243, 236, 226); 
+            margin: 20px auto;/*margem igual a esquerda e a direita para centralizar*/
+            padding: 10px 20px;
+        }
+
+        li{
+            margin-bottom: 10px ;
+            line-height: 1.1;
+        } 
+
+        .conteiner {
+            background-color:rgb(173, 167, 159);
+            overflow: auto;/*auto: deixa automatico para se adequqar a scroll ou hiden
+            scroll: cria uma barra de rolagem para acessar todo o conteiner
+            hiden:define o tamanho do conteiner de forma que caibam todos os elementos*/
+            /*height: 100px;força o tamanho do conteiner(ocultando o que ulrapassar esse tamanho)*/
+        }
+
+        .esquerda{
+            float: left;
+            margin-left: 8%;/*podendo usar numero relativo ou absoluto 10% ou 10px*/
+        }
+
+        .direita{
+            float: right;
+            margin-right: 8%;
+        }
+    </style>
+
+    <body>
+        <h1 class = "topo">Olá Mundo!</h1>
+        <p class = "topo">Este é o resumo das quatro primeiras aulas:</p>
+        
+        <div class ="conteiner">
+            <div class="caixa esquerda">
+                <h3>HTML e CSS são linguagens de conteúdo</h3> 
+                <ul>
+                    <li>HTML define os elementos e o conteúdo da página</li>
+                    <li>CSS define a formatação desses elementos</li>
+                    <li>A linguagem de programação do navegador é o <b>Javascript</b></li>
+                </ul>
+            </div>
+
+            <div class="caixa direita">
+                <h3>O CSS formata os elementos</h3>
+                <ul>
+                    <li>O CSS tem seus próprios atributos</li>
+                    <li>Vários atributos podem ser agrupados para cada classe ou elemento HTML</li>
+                    <li>Um elemento pode ter uma ou mais classes CSS</li>
+                </ul>
+            </div>
+
+            <div class="caixa">
+                <h3>O HTML trabalha com elementos</h3>
+                <ul>
+                    <li>Cada elemento possui tags</li>
+                    <li>Entre as tags nós colocamos o conteúdo</li>
+                    <li>Para alterar o elemento nós usamos atributos</li>
+                </ul>
+            </div>
+  
+        </div>
+
+    </body>
+</html>

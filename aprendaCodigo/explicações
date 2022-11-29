@@ -1,0 +1,172 @@
+---------------OS VIDEOS SÃO MEIO ANTIGOS, ENTÃO AS IFOS PODEM ESTAR DESATUALIZADA(2016)---------------
+----Isso é mais para ter um intendimento melhor de como funciona o HTML/CSS---
+
+SEO- otimização dos motores de busca(google por exemplo)
+    open graph protocol- padrão mais famoso de SEO- funcionamento de metadados para motores de busca(como indentificam do que a pag está falando)
+
+
+atributo link é um carregamento de arquivo, onde rel se informa o tipo de arquivo e o href o link(caminho).
+
+.png é diferente de .jpg ja que o png n perde qualidade ao almentar ou diminuir de tamanho.
+
+30
+div é uma separação generica de coisas no html, mais existe como especificar isso(para saber qual separação está sendo requerida).
+ao especificar todas as plataformas que forem acessar a pag irá saber de qual divição se trata.
+
+31
+background-position: center center; centraliza a imagem em altura e largura
+background-repeat: no-repeat; n dexa a imagem se repitir
+background-size: cover; faz ela preencher a tela
+background-attachment: fixed; fixa ela naquela posição
+height: 100vh; faz com que o background faça parte de 100% da tela
+
+32
+background-image: linear-gradient(rgb(102, 6, 102), rgb(73, 34, 179)); da um efeito de mudança de uma cor para outra(de uma até a outra alterando levemente o tom), podendo colocar varias cores.
+    
+    
+background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.9)), url(https://img.youtube.com/vi/QXXX9-TrXrg/maxresdefault.jpg); necessario para q o sombreamento fique sobre a imagem(para trarar como uma coisa só).
+opacity- gera uma transparencia em todo background em relação ao body(até os textos).
+
+33
+.titulo, .subtitulo{
+    font-size: 4em;/*igual a 400% do tamanho*/
+    margin: 0px;
+}
+
+.subtitulo{
+    font-size: 3em;
+}
+
+
+aqui na questão do funcionamento da margin, o subtitulo herdo os funcionamentos de tituloe depois so modificou o tamanho mantendo a margin == 0
+4em significa 400%, e está tratando do tamanho original(em parece que significa 100, seria um multiplicador)
+
+obs: mais tarde troca para classes das coisas que estão diferentes
+
+
+34
+text-shadow: desvio na horizontal   desvio na vertical  blur    cor;
+
+36
+o elemento img traz 2 atributos:
+    src(sorce)- origem
+    alt- descrição alternativa
+
+38
+ align-items: flex-start; alinha com base o top ou flex-end com base no fim
+
+ 41
+.tamanho_icone{
+    font-size: 180% !important;
+}
+
+o !importante força a priorizar essas configurações, independente de qualquer outra que exista
+
+42
+figcaption{
+    width: 182px;
+    height: 341px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aling-items = alinhamento vertical
+justify-content = alinhamento horizontal (é necessario o justify e a classe center(text-align) devido os titulos com quebra linha n respeitarem o justify e sim o text-align)
+
+
+figure > img {
+    position: relative;
+    z-index: 1;
+}
+
+torna a posição relativa
+z-index = diz que quanto maior o numero mais prioridade o elemento tem(1 diz q a imagem está mais a frente do texto)
+    so funciona com a posição relativa
+transition: all 0.5 linear; = diz q qualquer transição q aconteça leve 0.5s e acontece de forma linear(transition e o q da um delay na transição do elemento)
+    figure > img:hover{
+    opacity: 0.2;
+    }
+    os ":" chama um evento(no caso a transição)(nome do evento de passar o mause em cima do item é hover)
+    para q essa transição aconteça demora 5s, tornando a opacity 0.2
+
+43
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vhII1qlcZ4E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+esse link é o tipo usado que so coloca o video em significa
+usa-se indo no compartilhar do youtube
+e depois ir em incorporar
+o link dado é esse
+
+45
+<form action="" method="">
+    <input type="search" name="" id="">
+    <button type="submit"></button>
+</form>
+action = caminha da requisição
+method =  tipo de postagem
+o button com type submit envia os dados dentro do input search para o form(buscando uma pag referente, no lado server)
+
+47
+banners normalmente são pags html das quais o site n tem acesso, e sim o dono do anuncio.
+no caso só faz uma div para se ter controle do espaço que a propaganda vai ocupar
+
+48
+<table>
+    <caption>Ranking</caption>
+    <thead>
+        <tr>
+            <th></th>
+            <th>Nome do Trailer</th>
+            <th>Views</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>1</th>
+            <td>Marvel's Spider-Man</td>
+            <td>11.220</td>
+        </tr>
+    </tbody>
+</table>
+table = onde contem a tabela, o que tem dentro dele tenta-se trasformar em tabela
+caption = independente do lugar que ele esteja dentro de table ele é dado como titulo
+thead = inicia e termina o cabeçalho (uma ou mais linhas)
+tbody = inicia e termina o corpo (uma ou mais linhas)
+tfoot = inicia e termina o rodapé (uma ou mais linhas)
+    obs.: n importa sua localiuzação no final é montado desse jeito (a pag web interpreta desse jeito)
+
+tr = a tag q determina onde começa e termina a tabela
+th ou td = determina as colunas por linha
+    th - destaca o texto(padrão = texto em negrito e centralizado) 
+    td - onde o texto n é destacado(padrão = texto normal e alinhado a esquerda)
+
+    atribudo colspan = diz que um atributo pode ocupar 2 ou mais colunas
+    atributo rowspan = mesma coisa so q para linha
+
+50
+tbody > tr:nth-child(odd){
+    background-color: #265f70;
+}
+
+tbody > tr:hover{
+    background-color: darkgrey;
+}
+
+tem de ter dois termos, senão onde ja tem cor(definida pelo 1 tbody), n iria funcionar o hover.
+
+51
+<li><a class="link" target="_blank" href="\rodape\quemsomos.html">Quem somos</a></li>
+o elemento target="_blank" faz com q o link seja aberto em outra aba
+
+<li><a class="link" href="#">Inicio</a></li>
+o "#" sozinho com href faz ir para o inicio da pag
+    mais ele pode ser usado para indentificar para qual elemento se deseja voltar
+        Ex.:#filme001
+
+61
+pointer-events: none;
+torna toda a div onde o comando está sem eventos de mouse, dando espaço para div atrar, no caso o video
+    
